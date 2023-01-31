@@ -1,0 +1,44 @@
+collection-documents-schema
+
+//fetch default is get
+
+const url =''
+
+USING FETCH METHOD
+fetch(url).then((res) =>{
+    res.json();
+})
+.then((data) =>{
+    console.log(data)
+}).catch((err) => console.log(err))
+
+USING ASYNC/ AWAIT
+const getData = async() =>{
+ const res =await fetch (url, {
+    method: "POST"
+ });
+ const data = await res.json()
+ console.log(data)
+}
+
+
+TRY AND CATCH
+const getData = async() =>{
+ try{
+    const res =await fetch (url);
+    const data = await res.json();
+    console.log(data);
+ } catch(error){
+    console.log(error)
+ }
+}
+
+VIEWS
+employee- name, role, age, _id, createdAt, updatedAt
+landing page--all employees
+details ---single employee (delete)
+--create page---post to server to add to database
+----back to homepage
+
+
+window object-- location, href

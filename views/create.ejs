@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/employees">Homepage</a></li>
+            <li> <a href="/create">Add employees</a></li>
+        </ul>
+    </nav>
+    <h1>Add a new Employee</h1>
+     <form action="/employees" method="post">
+        <div>
+            <label for ="name">Name:</label>
+        <input type="text" required id="name" name="name"/> <br>
+        </div>
+        <br>
+        <div>
+            <label for ="role">Role:</label>
+            <input type="text" name="role" required id="role"/><br>
+        </div>
+         <br>
+        <div>
+            <label for ="age">Age:</label>
+            <input type="number" name="age" required id="age"/><br>   
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>  
+        </div>
+     </form>
+
+</body>
+</html>
